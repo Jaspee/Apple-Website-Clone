@@ -1,0 +1,232 @@
+body {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    line-height: 1.47059;
+}
+
+header {
+    display: block;
+}
+
+nav {
+    background: none;
+    width: 100%;
+    min-width:320px;
+    height:44px;
+    /* max-height: 44px; */
+    user-select: none;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0 -8px;
+    width: auto;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;    
+    position: relative;
+}
+
+nav ul li {
+    /* margin: 10px 0; */
+    text-align: left;
+    display:block;
+    /* height: 44px;     */
+}
+
+nav ul li a {
+    font-weight: 300;
+    color:black;    
+}
+
+.nav_content {    
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 0;
+    padding-bottom: 0;    
+    padding-inline-start: 22px;
+    padding-inline-end: 22px;    
+    display: block;        
+}
+
+nav ul li .submenu {    
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 44px;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+}
+
+.local_nav {
+    height: 52px;
+    position: relative;
+}
+
+.local_nav_background {
+    height: 100%;
+    left: 0;
+    margin-top: -44px;
+    padding-top: 44px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.local_nav_content {
+    height: 52px;    
+    /* padding-inline-start: 22px;
+    padding-inline-end: 22px; */
+    margin: 0 auto;
+    position: relative;
+    max-width: 980px;
+}
+
+.local_nav_div {
+    margin: 14px 0 -14px;
+    box-sizing: content-box;
+    display: block;
+    float: left;    
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: .011em;
+    
+    line-height: 1.1428571429;
+}
+
+.local_nav_title {
+    display: flex;
+    flex-direction: column-reverse;
+    color: black;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+}
+
+.local_nav_menu {
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1;
+    margin-top: -3px;
+}
+
+.local_nav_menu_tray {
+    float: left;
+    padding-top: 18px;
+}
+
+nav .local_nav_menu_items{
+    display: block;
+    margin: 0;
+}
+
+nav ul .local_nav_menu_item{
+    display: list-item;
+    margin-left: 24px;
+    float: left;
+}
+
+nav ul li .local_nav_menu_link {
+    display: inline-block;
+    line-height: 22px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+}
+
+.ribbon {
+    width: auto;
+    height: 52px;    
+}
+
+.ribbon_content_wrapper {
+    backdrop-filter: blur;
+    background-color: rgb(245, 245, 247);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ribbon_content_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 20px; */
+    min-width: 320px;
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ribbon_content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;  
+}
+
+.more {
+    color: rgb(0,102,304);
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+/* .nav-item {
+    position: relative;
+  }
+  
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #111;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */

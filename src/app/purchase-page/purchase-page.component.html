@@ -1,0 +1,1086 @@
+<div class="bundle selection">
+    <div class="bundle_selection_header">
+        <h1>Choose your new MacBook Pro.</h1>
+    </div>
+    <div class="bundle_selection_chatbox">
+        <div class="chat_icon_container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="35px" height="35px"><path d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.7 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z"/></svg>
+        </div>
+        <div class="chat_container">
+            <div class="chat_title_container">
+                Have questions about buying a mac?
+                <br>
+            </div>
+            <div class="chat_content_container">
+                <a href="#" class="more">
+                     Chat with a Mac Specialist 
+                </a>
+            </div>
+
+            <div></div>
+
+            <div class="bundle_selection_option">
+                <div class="bundle_selection_tabs">
+                    <div class="bundle_selection_sticky_filter">
+                        <div data-core-sticky style="top: 0.400009px">
+                            <div class="bundle_selection_tabnav">
+                                <div class="bundle_selection_tabnav_items">
+                                    <fieldset class="fieldset">
+                                        <legend class="visually_hidden"></legend>
+                                        <div class="segmented_control">
+                                            <div class="segmented_control_item">
+                                                <button (click)="displayScreenSize('14-inch')" type="button" class="segmented_control_button left_button" [ngStyle] = "screenSize == '14-inch' ? {borderColor:'#06c', boxShadow:'inset 0 0 0 1px #06c'} : {}">                                                    
+                                                    <span class="segmented_control_label">14-inch</span>
+                                                </button>
+                                            </div>
+                                            <div class="segmented_control_item">
+                                                <button (click)="displayScreenSize('16-inch')" type="button" class="segmented_control_button right_button" [ngStyle] = "screenSize == '16-inch' ? {borderColor:'#06c', boxShadow:'inset 0 0 0 1px #06c'} : {}">
+                                                    <span class="segmented_control_label">16-inch</span>
+                                                </button>
+                                            </div>
+                                        </div>                                        
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bundle_selection_content" style="height: 2893.75px;">
+                        <div class="bundle_selection_14-inch" *ngIf="screenSize=='14-inch'">
+                            <div class="product_selection_grid">
+                                <div class="product_14-inch">
+                                    <div class="filter_text">Filter by chip:</div>
+                                    <div class="filter_tabpill_container">
+                                        <ul class="filter_tabpill_group">                                            
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('All')" [ngStyle] = "chipFilter == 'All' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">All</button>
+                                            </li>                                            
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('M3')" [ngStyle] = "chipFilter == 'M3' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">M3</button>
+                                            </li>
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('M3 Pro')" [ngStyle] = "chipFilter == 'M3 Pro' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">M3 Pro</button>
+                                            </li>
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('M3 Max')" [ngStyle] = "chipFilter == 'M3 Max' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">M3 Max</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product_tab_panel" style="height: 2828.75px">
+                                        <div class="product_filtered">
+                                            <div class="product_tab" *ngIf = "productChipArr[0]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="(productArr[0] == 'grey') ? 'assets/mbp14-spacegray-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[0] == 'grey' ? 'Space Grey' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(0, 'grey')" [style.borderColor] ="(productArr[0] == 'grey') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_grey.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(0, 'silver')" [style.borderColor] ="(productArr[0] == 'silver') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             8-core CPU
+                                                            <br>
+                                                             10-core GPU
+                                                            <br>
+                                                             8GB Unified Memory
+                                                            <br>
+                                                             512GB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Two Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>70W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 7,499.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 312.46/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[1]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="(productArr[1] == 'grey') ? 'assets/mbp14-spacegray-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[1] == 'grey' ? 'Space Grey' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="3" class="product_color_link" (click) ="displayProductColor(1, 'grey')" [style.borderColor] ="(productArr[1] == 'grey') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_grey.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="4" class="product_color_link" (click) ="displayProductColor(1, 'silver')" [style.borderColor] ="(productArr[1] == 'silver') ? '#0071e3 ': '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             8-core CPU
+                                                            <br>
+                                                             10-core GPU
+                                                            <br>
+                                                             8GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Two Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>70W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 8,299.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 345.79/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[2]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[2] == 'grey' ? 'assets/mbp14-spacegray-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[2] == 'grey' ? 'Space Grey' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(2, 'grey')" [style.borderColor] ="productArr[2] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_grey.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(2, 'silver')" [style.borderColor] ="productArr[2] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             8-core CPU
+                                                            <br>
+                                                             10-core GPU
+                                                            <br>
+                                                             16GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Two Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>70W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 9,099.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 379.13/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" *ngIf = "productChipArr[3]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[3] == 'grey' ? 'assets/mbp14-spaceblack-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[3] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(3, 'grey')" [style.borderColor] ="productArr[3] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(3, 'silver')" [style.borderColor] ="productArr[3] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-pro-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             11-core CPU
+                                                            <br>
+                                                             14-core GPU
+                                                            <br>
+                                                             18GB Unified Memory
+                                                            <br>
+                                                             512GB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>70W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 9,999.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 416.63/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[4]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[4] == 'grey' ? 'assets/mbp14-spaceblack-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[4] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(4, 'grey')" [style.borderColor] ="productArr[4] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(4, 'silver')" [style.borderColor] ="productArr[4] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-pro-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             12-core CPU
+                                                            <br>
+                                                             18-core GPU
+                                                            <br>
+                                                             18GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>96W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 11,599.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 483.29/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[5]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[5] == 'grey' ? 'assets/mbp14-spaceblack-select-202310.jpg' : 'assets/mbp14-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[5] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(5, 'grey')" [style.borderColor] ="productArr[5] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(5, 'silver')" [style.borderColor] ="productArr[5] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-max-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             14-core CPU
+                                                            <br>
+                                                             30-core GPU
+                                                            <br>
+                                                             36GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>14-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>96W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 14,799.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 616.63/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bundle_selection_16-inch" *ngIf="screenSize=='16-inch'">
+                            <div class="product_selection_grid">
+                                <div class="product_14-inch">
+                                    <div class="filter_text">Filter by chip:</div>
+                                    <div class="filter_tabpill_container">
+                                        <ul class="filter_tabpill_group">                                            
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('All')" [ngStyle] = "chipFilter == 'All' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">All</button>
+                                            </li>                                            
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('M3 Pro')" [ngStyle] = "chipFilter == 'M3 Pro' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">M3 Pro</button>
+                                            </li>
+                                            <li class="filter_tabpill_item">
+                                                <button class="filter_button" (click) = "displayChip('M3 Max')" [ngStyle] = "chipFilter == 'M3 Max' ? {backgroundColor: '#1d1d1f', color: '#fff'} : {}">M3 Max</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product_tab_panel" style="height: 2828.75px">
+                                        <div class="product_filtered">
+                                            <div class="product_tab" *ngIf = "productChipArr[6]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="(productArr[0] == 'grey') ? 'assets/mbp16-spaceblack-select-202310.jpg' : 'assets/mbp16-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[0] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(0, 'grey')" [style.borderColor] ="(productArr[0] == 'grey') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(0, 'silver')" [style.borderColor] ="(productArr[0] == 'silver') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-pro-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             12-core CPU
+                                                            <br>
+                                                             18-core GPU
+                                                            <br>
+                                                             18GB Unified Memory
+                                                            <br>
+                                                             512GB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>16-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>140W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 11,999.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 499.96/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[7]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="(productArr[1] == 'grey') ? 'assets/mbp16-spaceblack-select-202310.jpg' : 'assets/mbp16-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[1] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="3" class="product_color_link" (click) ="displayProductColor(1, 'grey')" [style.borderColor] ="(productArr[1] == 'grey') ? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="4" class="product_color_link" (click) ="displayProductColor(1, 'silver')" [style.borderColor] ="(productArr[1] == 'silver') ? '#0071e3 ': '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-pro-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             12-core CPU
+                                                            <br>
+                                                             18-core GPU
+                                                            <br>
+                                                             36GB Unified Memory
+                                                            <br>
+                                                             512GB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>16-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>140W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 13,599.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 566.63/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" style="margin-left: 20px; margin-bottom: 20px;" *ngIf = "productChipArr[8]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[2] == 'grey' ? 'assets/mbp16-spaceblack-select-202310.jpg' : 'assets/mbp16-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[2] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(2, 'grey')" [style.borderColor] ="productArr[2] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(2, 'silver')" [style.borderColor] ="productArr[2] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-max-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             14-core CPU
+                                                            <br>
+                                                             30-core GPU
+                                                            <br>
+                                                             36GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>16-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>140W USB-C Power Adapter</li>                                                             
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 15,999.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 666.63/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product_tab" *ngIf = "productChipArr[9]">
+                                                <div class="product">
+                                                    <img width="452" height="420" [src]="productArr[3] == 'grey' ? 'assets/mbp16-spaceblack-select-202310.jpg' : 'assets/mbp16-silver-select-202310.jpg'" alt="" class="product_image">
+                                                    <fieldset class="product_color">
+                                                        <legend>
+                                                            <span class="product_color_label">{{productArr[3] == 'grey' ? 'Space Black' : 'Silver'}}</span>
+                                                        </legend>
+                                                        <ul class="product_color_items">
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="1" class="product_color_link" (click) ="displayProductColor(3, 'grey')" [style.borderColor] ="productArr[3] == 'grey'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_space_black.jpg" class="product_color_image">
+                                                                </label>                                                                
+                                                            </li>
+                                                            <li class="product_color_item">
+                                                                <input type="radio" class="product_color_value">
+                                                                <label for="2" class="product_color_link" (click) ="displayProductColor(3, 'silver')" [style.borderColor] ="productArr[3] == 'silver'? '#0071e3' : '#f5f5f7'">
+                                                                    <img width="32" height="32" src="assets/product_color_silver.jpg" class="product_color_image">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </fieldset>
+                                                    <div class="product_details">
+                                                        <div class="icon"></div>
+                                                        <h2 class="product_title_14inch" style="min-height: 183px;">
+                                                            <div class="m3_icon_row">
+                                                                <img src="assets/m3-max-icon.png" alt="" width="51" height="51" class="m3_icon">
+                                                            </div>
+                                                             16-core CPU
+                                                            <br>
+                                                             40-core GPU
+                                                            <br>
+                                                             48GB Unified Memory
+                                                            <br>
+                                                             1TB SSD Storage¹
+                                                            <br>
+                                                        </h2>                                                        
+                                                        <ul class="product_specs">
+                                                            <li>16-inch Liquid Retina XDR display²</li>
+                                                            <li>Three Thunderbolt/ USB&nbsp;4 ports, HDMI port, SDXC card slot, headphone jack, <br>MagSafe&nbsp;3 port</li>
+                                                            <li>Magic Keyboard with Touch ID</li>
+                                                            <li>Force Touch trackpad</li>
+                                                            <li>140W USB-C Power Adapter</li>                                                            
+                                                        </ul>                                                        
+                                                        <div class="product_price_container">
+                                                            <div class="product_prices">
+                                                                <div class="product_full_price">
+                                                                    <span class="product_price_text">RM 17,999.00</span>
+                                                                </div>
+                                                                <div class="product_price_separator">or</div>
+                                                                <div class="product_monthly_price">
+                                                                    <span class="product_price_text" >RM 749.96/mo. for <br>24 mo.*</span>
+                                                                </div>
+                                                                <div class="product_price_footer">
+                                                                    <a href="#" class="more">Explore monthly instalment options</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_trade_in">
+                                                            <section>
+                                                                <h3 class="product_trade_in_text">Add a trade-in</h3>
+                                                                <h3 class="product_trade_in_text" style="font-weight: 400;"> Get a credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</h3>                                                                
+                                                                <a href="#" class="product_trade_in_text more" style="font-weight: 400;">Get started</a>                                                                
+                                                            </section>
+                                                        </div>
+                                                        <div class="product_select">
+                                                            <button type="submit" class="select_button">Select</button>
+                                                            <div style="padding-top: 24px;">
+                                                                <h3 class="product_trade_in_text">Need a moment?</h3>
+                                                                <div style="margin-right: 20px; font-size: 14px;">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</div>
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                        <div style="display: flex;">
+                                                            <a href="#" class="more" style="font-size: 14px;">Save for later</a>    
+                                                        </div>
+                                                        <div class="product_delivery" style="padding-top: 20px;">
+                                                            <div style="align-items: flex-start; display: flex; padding-top: 16px">
+                                                                <span style="margin-top: -4px; margin-right: 8px;">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="25px" height="25px">
+                                                                        <path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h507L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <div>
+                                                                    <h3 class="product_trade_in_text">Delivery: </h3>
+                                                                    <h3 class="product_trade_in_text" style="font-weight: 400;">In Stock <br> Free Shipping </h3>
+                                                                    <div style="display: flex;">
+                                                                        <a href="#" class="more" style="font-size: 14px;">Get delivery dates</a>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="billboard">
+                    <div class="whats_in_the_box_section">
+                        <h2 class="box_section_header">What's in the Box</h2>
+                        <ul class="box_section_items">
+                            <li class="box_item">
+                                <div class="image_wrapper">
+                                    <img src="assets/box_mbp14.jpg" alt="" width="568" height="392">
+                                </div>
+                                <div class="box_item_label">14-inch MacBook Pro</div>
+                            </li>
+                            <li class="box_item">
+                                <div class="image_wrapper">
+                                    <img src="assets/box_mbp14_cable.jpg" alt="" width="45" height="392">
+                                </div>
+                                <div class="box_item_label" >USB-C to MagSafe 3&nbsp;Cable (2m)</div>
+                            </li>
+                            <li class="box_item">
+                                <div class="image_wrapper">
+                                    <img src="assets/box_mbp14_adapter.jpg" alt="" width="242" height="392">
+                                </div>
+                                <div class="box_item_label">USB-C Power Adapter</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+</div>
